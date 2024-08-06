@@ -1,0 +1,290 @@
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body {
+    padding:0;
+    margin:0;
+	font-family: arial;
+    width:100%;
+    min-height: 100vh;
+    
+}
+
+.form {
+    display:flex;
+    background-color: #FB7E14;
+    justify-content: center;
+    position:fixed;    
+    width:100%;
+    height:30px;
+}
+.form h2 a {
+    text-decoration: none;
+    color:black;
+}
+
+
+header {
+    display:flex;
+    justify-content: center;
+    height:140px;
+}
+
+.container {
+    display:flex;
+    justify-content: space-between;
+    width:980px;
+}
+
+.logo img {
+    height:80px;
+    width:80px;
+    margin-top:10px;
+}
+
+.logo {
+    align-items: center;
+    display:flex;
+}
+
+.menu {
+    display:flex;
+    align-items: center ;
+}
+nav ul {
+    display:flex;
+}
+nav ul li  {
+    
+    list-style: none;
+    
+    
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    color:black;
+    padding:15px;
+    list-style: none;
+    color:black;
+    font-size:20px;
+}
+
+#ativado,
+nav ul li :hover {
+    background-color: #FB7E14;
+    color:black;
+}
+
+
+#banner {
+    width:100%;
+    height: 100%;
+    overflow: hidden;
+    display:flex;
+    position: relative;  /* Adicione esta linha */
+    justify-content: center;
+    align-items: flex-end;
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,1) 20%, rgba(101,101,101,1) 100%);
+}
+
+.banner_video {
+    display:flex;
+    justify-content: center;
+    width:100%;
+    height:100%;
+}
+
+.banner_video video {
+    width:80%;
+    display:flex;
+    justify-content: center;
+}
+
+#banner .conteudo {
+    position: absolute;  /* Altere para absolute */
+    top: 0;  /* Posiciona no topo do contêiner #banner */
+    left: 0;  /* Alinha à esquerda do contêiner #banner */
+    width: 100%;  /* Ocupa toda a largura do contêiner #banner */
+    height: 100%;  /* Ocupa toda a altura do contêiner #banner */
+    
+}
+
+#banner .conteudo img {
+    position:absolute;
+    left:60%;
+    background-color: ;
+    width:350px;
+    top:80%;
+}
+
+.doutores {
+    display:flex;
+    margin-top:30px;
+    justify-content: center;
+}
+
+.best_person {
+    width: 100%;
+       	
+    font-size:27px;
+    display: flex;
+    justify-content: center;
+    margin-top:40px;
+    font-family:"Raleway";
+    color:black;
+    font-weight:bold;
+    margin-right:20px;
+    padding:20px;
+}
+
+
+.retrato {
+    display:flex;
+    justify-content: center;
+}
+
+
+.scientist {
+    width:auto;
+    height:auto;
+    flex:1;
+    margin-right:7px;
+}
+
+.scientist img {
+    width:280px;
+    height:280px;
+}
+
+.scientist h4 {
+    text-align: center;
+    margin-right:15px;
+}
+
+
+#about {
+    background-color:#FB7E14 ;
+    width:100%;
+    height:380px;
+    margin-top:45px;
+    display: flex;
+    justify-content: center;
+}
+
+.text_about {
+    display:flex;
+    font-size:19px;
+    text-align: left;
+    width:500px;
+    align-items: center;
+    font-family: "Raleway";
+    font-weight: bold;
+    line-height:27px;
+    text-align:justify;
+    
+}
+.about_logo {
+    display:flex;
+    position: static;
+    
+    align-items: center;
+}
+
+.about_logo img {
+    width:250px;
+    height:250px;
+    margin-right:90px;
+}
+
+
+footer {
+    height:60px;
+    justify-content: center;
+    background-color: black;
+    color:white;
+    font-size:20px;
+    display:flex;
+    align-items: center;
+    word-spacing:10px;
+    letter-spacing: 5px;
+}
+
+footer .eu {
+    color:white;
+    font-weight: bold;
+
+    transition: all 0.8s ease-in-out;
+}
+
+footer .eu:hover {
+    font-size:20px;
+    color:red;
+    border:1px solid white;
+}
+
+@media (max-width:768px) {
+    
+    .form {
+        display:flex;
+        justify-content: center;
+    }
+
+     header {
+        height:180px;
+     }
+
+     header .container .logo {
+        margin-left:50px;
+     }
+
+     header .container .logo img {
+        width:60px;
+        height:60px;
+        
+     }
+
+     .menu nav ul li a {
+        font-size:13px;
+     }
+     .menu {
+        width:100%;
+        margin-left:110px;
+     }
+
+
+
+     .doutores {
+        display:flex;
+        justify-content: center;
+     }
+
+     .retrato {
+        display:flex;
+        justify-content: center;
+     }
+     .scientist img {
+        width:180px;
+        height:180px;
+        margin-left:20px;
+     }
+
+     .text_about {
+        font-size:15px;
+        margin-left:10px;
+     }
+
+     .about_logo {
+        display:flex;
+     }
+
+     .about_logo img {
+        width:130px;
+        height:130px;
+     }
+}
